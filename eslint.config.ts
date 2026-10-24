@@ -11,8 +11,10 @@ export default defineConfig([
   {
     languageOptions: {
       parserOptions: {
-        projectService: true,
-        tsconfigRootDir: process.cwd(),
+        projectService: {
+          allowDefaultProject: ["*.ts"],
+        },
+        project: null,
       },
     },
   },
