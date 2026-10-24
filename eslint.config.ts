@@ -10,13 +10,15 @@ export default defineConfig([
   ...tseslint.configs.stylisticTypeChecked,
   {
     languageOptions: {
+      parser: tseslint.parser,
       parserOptions: {
         projectService: true,
+        project: null,
       },
     },
   },
   {
-    files: ["*.config.ts", "*.config.mjs"],
+    files: ["**/*.config.ts", "**/*.config.mjs"],
     extends: [tseslint.configs.disableTypeChecked],
   },
   {
