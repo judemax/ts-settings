@@ -14,6 +14,7 @@ export default defineConfig([
       parserOptions: {
         projectService: true,
         project: null,
+        tsconfigRootDir: globalThis.process.cwd(),
       },
     },
   },
