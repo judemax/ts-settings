@@ -25,6 +25,7 @@
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -32,15 +33,5 @@
       "node"
     ],
     "jsx": "react"
-  },
-  "include": [
-    "src/**/*",
-    "eslint.config.ts",
-    "prettier.config.mjs"
-  ],
-  "exclude": [
-    "node_modules",
-    ".vscode",
-    ".idea"
-  ]
+  }
 }

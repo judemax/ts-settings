@@ -1,3 +1,13 @@
 {
-  "extends": "./tsconfig.base.json"
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src/**/*",
+    "eslint.config.ts",
+    "prettier.config.mjs"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode",
+    ".idea"
+  ]
 }
